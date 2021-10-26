@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popUpstyle.css">
+</head>
+<body>
+    <script>
+        let fragment = document.createDocumentFragment();
+        
+        let popUpbox = document.createElement('div');
+        let wordAndAudio = document.createElement('div');
+        let audio = document.createElement('div');
+        let audioSvg = document.createElement('object');
+        let wordSpell = document.createElement('p');
+        let wordPhonetic = document.createElement('p');
+        let type = document.createElement('div');
+        let meaning = document.createElement('p');
+        let sentence = document.createElement('li');
+        let similar = document.createElement('p');
+        let synonyms = document.createElement('p');
+
+        audioSvg.type = "image/svg+xml";
+        audioSvg.data = "audio.svg";
+        audioSvg.className = "audio-svg";
+        audioSvg.textContent  = "Speaker logo";
+        
+        audio.class = "audio";
+        audio.appendChild(audioSvg);
+        
+        //------------------------------------
+        wordSpell.className = "word-spell";
+        wordSpell.textContent  = "epigram";
+        wordAndAudio.className = "word-and-audio";
+
+        wordAndAudio.appendChild(audio);
+        wordAndAudio.appendChild(wordSpell);
+        //-------------------------------------
+
+        wordPhonetic.className = "word-phonetic";
+        wordPhonetic.textContent  = "/ˈɛpɪɡram/";
+        //-------------------------------------
+
+        type.className = "type";
+        type.textContent  = "noun";
+        //-------------------------------------
+
+        meaning.className = "meaning";
+        meaning.textContent  = "a pithy saying or remark expressing an idea in a clever and amusing way."
+        //-------------------------------------
+
+        sentence.className = "sentence";
+        sentence.textContent  = "\"a Wildean epigram\""
+        //--------------------------------------
+
+        similar.textContent  = "similar";
+
+        const syns = ["quip", "witticism", "gem", "play on words", "jest", "pun", "sally"]
+        let synString = "";
+
+        syns.forEach((it, pos)=>{
+            if (pos != 6) {
+                synString += `${it}, `;
+            } else {
+                synString += `${it}`;
+            }
+        });
+
+        synonyms.textContent  = synString;
+        //-------------------------------------
+
+        popUpbox.className = "popup-box";
+
+        popUpbox.appendChild(wordAndAudio);
+        popUpbox.appendChild(wordPhonetic);
+        popUpbox.appendChild(type);
+        popUpbox.appendChild(meaning);
+        popUpbox.appendChild(sentence);
+        popUpbox.appendChild(similar);
+        popUpbox.appendChild(synonyms);
+
+        fragment.appendChild(popUpbox);
+
+        document.body.appendChild(fragment);
+    </script>    
+</body>
+</html>

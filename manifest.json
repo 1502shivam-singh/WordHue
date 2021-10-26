@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Thesaurus",
+  "description": "Get meaning of highlighted words",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage",
+    "scripting"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"], 
+    "css" : ["styles/scrollStyle.css"]
+  }],
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "web_accessible_resources": [{
+    "matches": ["<all_urls>"],
+    "resources": ["assets/audio.svg"]
+}]
+}

@@ -1,0 +1,41 @@
+p {
+ margin: 0;
+ padding: 0;
+}
+
+.popup-box {
+    font-family: Maison Neue;
+}
+
+.word-and-audio {
+    display: flex;
+    align-items: center;
+}
+
+.audio {
+    padding: 5px 0 0 0;
+}
+
+.audio-svg {
+    width: 40px;
+}
+
+.word-spell {
+    font-size: 1.3rem;
+    padding: 0 0 0 16px;
+}
+
+
+.word-phonetic {
+    font-family: monospace;
+    padding: 0 0 0 56px;
+    font-size: 1rem;
+}
+
+.type {
+    margin: 10px 0;
+}
+
+.sentence {
+    margin: 5px 0 10px 0;
+}

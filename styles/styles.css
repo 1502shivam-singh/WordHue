@@ -1,0 +1,18 @@
+html {
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+body {
+    border-radius: 10px;
+}
+
+.execute {
+    font-family: Maison Neue;
+    padding-bottom: 5px;
+}
+
+.word-and-audio {
+    display: flex;
+}

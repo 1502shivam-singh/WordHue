@@ -1,0 +1,24 @@
+.popUpContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.popUpContainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+.popUpContainer::-webkit-scrollbar-thumb {
+    background: rgb(7, 7, 7); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.popUpContainer::-webkit-scrollbar-thumb:hover {
+    background: #009eb3; 
+}
+
+.popup-box {
+    overflow: scroll,
+}
