@@ -2,23 +2,89 @@
     width: 5px;
 }
 
-/* Track */
 .popUpContainer::-webkit-scrollbar-track {
     box-shadow: inset 0 0 2px grey; 
     border-radius: 10px;
 }
 
-/* Handle */
 .popUpContainer::-webkit-scrollbar-thumb {
-    background: rgb(7, 7, 7); 
+    background: rgb(114, 114, 114); 
     border-radius: 10px;
 }
 
-/* Handle on hover */
 .popUpContainer::-webkit-scrollbar-thumb:hover {
-    background: #009eb3; 
+    background: #222222; 
 }
 
 .popup-box {
-    overflow: scroll,
+    font-family: "Maison Neue";
+    padding: 10px;
+}
+
+.audio-svg {
+    width: 40px;
+}
+
+.word-spell {
+    font-size: 1.3rem;
+    padding: 0 0 0 16px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.word-and-audio {
+    display: flex;
+    align-items: center;
+}
+
+.audio {
+    padding: 5px 0 0 0;
+    width: 40px;
+    height: 50px;
+}
+
+object {
+    pointer-events: none;
+}
+
+.word-phonetic {
+    font-family: monospace;
+    padding: 0 0 0 56px;
+    font-size: 0.85rem;
+    margin: -5px 0 0 0;
+}
+
+.type {
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.subDescription {
+    margin: 15px 10px;
+    font-size: 0.9rem;
+}
+
+.meaning {
+    margin: 0;
+}
+
+.sentence {
+    margin: 5px 0 0 0;
+    color: #5a5a5a;
+}
+
+.similar {
+    margin: 0;
+    color: green;
+    font-weight: 500;
+}
+
+.antonyms, .synonyms {
+    display: inline;
+}
+
+.opposites {
+    color: #d92222;
+    font-weight: 500;
 }
