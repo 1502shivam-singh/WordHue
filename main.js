@@ -114,7 +114,19 @@ function seekHighlight() {
             document.body.appendChild(popUp);
 
             fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${string}`)
-                .then(response => response.json())
+                .then(response => {
+                    if (response.status >= 200 && response.status <= 299) {
+                        return response.json();
+                    } else {
+                        let meaningFragment = document.createDocumentFragment();
+                        let popUpbox = document.createElement('div');
+
+                        popUpbox.innerHTML = `Oh a miss 😥, we are adding more words to our database how about you try <a href=\"https://www.google.co.in/search?q=${string}+meaning\">here</a>`;
+
+                        meaningFragment.appendChild(popUpbox);
+                        popUp.appendChild(meaningFragment);
+                    }
+                })
                 .then(data => {
                     const {
                         meanings,
