@@ -7,4 +7,4 @@ Currently supported for Google Chrome.
 
 Boost your vocabulary with ease! Our web extension provides instant access to the definition, phonetics, synonyms, and antonyms of any word on a text page. Effortlessly improve your language skills with just a click
 
-[intro.webm](https://user-images.githubusercontent.com/57267960/230774261-b44ad1fe-b019-4e30-b782-d7967b33ad33.webm)
+[vid.webm](https://user-images.githubusercontent.com/57267960/233731549-20440724-0182-4d07-9602-db8b934cd9b2.webm)
